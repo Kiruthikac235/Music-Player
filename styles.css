@@ -1,0 +1,68 @@
+/* Apply a bright and colorful gradient background */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff0000, #ff7300, #ffeb00, #32cd32, #1e90ff, #8a2be2);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Music player container - Fully Colorful */
+.player {
+    width: 350px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff6f61, #ff4500, #ff1493);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Music cover image */
+#music-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Song title */
+#title {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    color: rgb(0, 208, 255); /* Bright color */
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buttons styling */
+.controls button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: #ff1414; /* Bright pink */
+    color: rgb(0, 162, 255);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background: #ff4500; /* Bright orange */
+}
